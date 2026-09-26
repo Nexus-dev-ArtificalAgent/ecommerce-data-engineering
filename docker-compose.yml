@@ -2,10 +2,13 @@ services:
   postgres:
     image: postgres:16
     container_name: ecommerce-postgres
+    command: postgres -c timezone=UTC
     environment:
       POSTGRES_DB: ${POSTGRES_DB:-ecommerce}
       POSTGRES_USER: ${POSTGRES_USER:-de_user}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-de_password}
+      TZ: UTC
+      PGTZ: UTC
     ports:
       - "5432:5432"
     volumes:
