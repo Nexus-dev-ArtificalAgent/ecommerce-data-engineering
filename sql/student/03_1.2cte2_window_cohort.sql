@@ -1,0 +1,16 @@
+set search_path to core, public;
+with customer_spending as (
+	select o.customer_id, c.full_name, 
+		   sum(o.order_total) as total_spending 
+	  from orders as o
+	  join customers as c on o.customer_id = c.customer_id 
+	 group by o.customer_id, c.full_name  
+),
+	 ranked_customers as ( 
+	 select customer_id, full_name, total_spending, 
+	 		rank() over (order by total_spending DESC) as rank_num, 
+	 		dense_rank() over (order by total_spending desc) as dense_rank_num 
+	   from customer_spending 
+)
+select * from ranked_customers 
+ where dense_rank_num <= 3; 
