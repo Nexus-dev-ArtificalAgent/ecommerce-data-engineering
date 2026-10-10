@@ -1,0 +1,22 @@
+==================================================
+1. ROW COUNTS VERIFICATION (Kiểm tra số lượng dòng)
+==================================================
+- dim_date         : 180 rows
+- dim_customer     : 1,000 rows
+- dim_product      : 500 rows
+- dim_payment_method: 4 rows
+- dim_order_status : 5 rows
+- fact_sales       : 12,717 rows
+
+* Nhận xét: Số dòng của bảng fact_sales (12,717 rows) khớp hoàn toàn 
+với tổng số lượng dòng chi tiết sản phẩm trong bảng order_items của OLTP.
+
+==================================================
+2. REVENUE RECONCILIATION (Đối soát tổng doanh thu)
+==================================================
+- OLTP Total Revenue (core.order_items) : 61,706,432,000
+- Data Mart Revenue (fact_sales)       : 61,706,432,000
+- Difference (Chênh lệch)              : 0.00
+ 	
+* Kết luận: Dữ liệu doanh thu đối soát thành công tuyệt đối, 
+không có độ lệch giữa hệ thống OLTP nguồn và Data Mart đích.
