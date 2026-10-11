@@ -1,0 +1,19 @@
+=== Extraction Verification (data/incremental/day_2026-07-01) ===
+ [SUCCESS] customers_daily.csv -> 100 rows, 10 columns
+ [SUCCESS] products_daily.csv -> 50 rows, 9 columns
+ [SUCCESS] orders_daily.csv -> 600 rows, 10 columns
+ [SUCCESS] order_items_daily.csv -> 1533 rows, 9 columns
+ [SUCCESS] payments_daily.json -> 536 rows, 9 columns
+
+=== Targeted Exception Handling Verification ===
+[TEST 1] Missing file test:
+ path = data/incremental/day_2026-07-01/missing.csv
+ result -> FileNotFoundError: Missing file: C:/Users/Admin/app/ecommerce-data-engineering/data/incremental/day_2026-07-01/missing.csv
+
+[TEST 2] Unsupported extension test:
+ path = data/incremental/day_2026-07-01/unsupported.parquet
+ result -> ValueError: Unsupported file: C:/Users/Admin/app/ecommerce-data-engineering/data/incremental/day_2026-07-01/unsupported.parquet
+
+[TEST 3] Empty file test:
+ path = data/incremental/day_2026-07-01/empty.csv
+ result -> ValueError: Empty dataset: C:/Users/Admin/app/ecommerce-data-engineering/data/incremental/day_2026-07-01/empty.csv

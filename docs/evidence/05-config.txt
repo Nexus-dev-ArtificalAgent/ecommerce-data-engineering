@@ -1,0 +1,10 @@
+Lệnh kiểm tra thực thi: python -c "from src.config import SETTINGS; print(repr(SETTINGS))"   
+Kết quả cấu hình đối tượng toàn cục (SETTINGS):
++ Thư mục gốc (root): C:/Users/Admin/app/ecommerce-data-engineering   
++ Chuỗi kết nối CSDL (database_url): postgresql://postgres:postgres@localhost:5432/ecommerce   
++ Hệ thống đường dẫn Pipeline:
+	Thư mục Raw (raw_dir): .../data/raw   
+	Thư mục Staging (staging_dir): .../data/staging   
+	Thư mục Reject (reject_dir): .../data/reject   
+	Thư mục Metadata (metadata_dir): .../metadata   
+	Thư mục Reports (report_dir): .../reports

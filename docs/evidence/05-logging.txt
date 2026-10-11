@@ -1,0 +1,3 @@
+2026-10-11 17:06:49,398 | INFO | pipeline_test | Bắt đầu khởi động hệ thống kiểm tra Pipeline Logging...
+2026-10-11 17:06:49,399 | ERROR | pipeline_test | Lỗi thao tác dữ liệu -> Dataset: non_existent.csv | Path: data/incremental/day_2026-07-01/non_existent.csv | Chi tiết: Không tìm thấy file dataset: data/incremental/day_2026-07-01/non_existent.csv
+2026-10-11 17:06:49,400 | INFO | pipeline_test | Hoàn tất quy trình kiểm tra logging thành công!

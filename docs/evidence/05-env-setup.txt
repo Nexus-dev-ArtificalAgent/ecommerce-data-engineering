@@ -1,0 +1,8 @@
+Trạng thái môi trường: Đã kích hoạt thành công môi trường ảo .venv trên Windows PowerShell.   
+Danh sách các gói thư viện chính đã được cài đặt:
++ Pandas: Phiên bản 3.0.6   
++ SQLAlchemy: Phiên bản 2.1.4   
++ psycopg: Phiên bản 3.3.6   
++ numpy: Phiên bản 2.5.3   
++ python-dotenv: Phiên bản 1.2.4   
++ Các thư viện hỗ trợ: pip (26.2.1), python-dateutil, six, typing_extensions, và tzdata. 
