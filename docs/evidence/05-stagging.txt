@@ -1,0 +1,17 @@
+2026-10-11 17:22:52,386 | INFO | file_pipeline_runner | === Bắt đầu chạy File Ingestion Batch Runner cho thư mục: C:/Users/Admin/app/ecommerce-data-engineering/data/incremental/day_2026-07-01 ===
+2026-10-11 17:22:52,387 | INFO | file_pipeline_runner | Đang xử lý dataset: customers (File: customers_daily.csv)
+2026-10-11 17:22:52,414 | INFO | file_pipeline_runner | [customers] Profiling -> Rows: 100, Cols: 10, Duplicates: 0
+2026-10-11 17:22:52,457 | INFO | file_pipeline_runner | [SUCCESS] customers -> Input rows: 100 | Output rows: 100 | Đã lưu tại: C:/Users/Admin/app/ecommerce-data-engineering/data/staging/customers_clean.csv
+2026-10-11 17:22:52,457 | INFO | file_pipeline_runner | Đang xử lý dataset: products (File: products_daily.csv)
+2026-10-11 17:22:52,460 | INFO | file_pipeline_runner | [products] Profiling -> Rows: 50, Cols: 9, Duplicates: 0
+2026-10-11 17:22:52,468 | INFO | file_pipeline_runner | [SUCCESS] products -> Input rows: 50 | Output rows: 50 | Đã lưu tại: C:/Users/Admin/app/ecommerce-data-engineering/data/staging/products_clean.csv
+2026-10-11 17:22:52,468 | INFO | file_pipeline_runner | Đang xử lý dataset: orders (File: orders_daily.csv)
+2026-10-11 17:22:52,495 | INFO | file_pipeline_runner | [orders] Profiling -> Rows: 600, Cols: 10, Duplicates: 0
+2026-10-11 17:22:52,511 | INFO | file_pipeline_runner | [SUCCESS] orders -> Input rows: 600 | Output rows: 600 | Đã lưu tại: C:/Users/Admin/app/ecommerce-data-engineering/data/staging/orders_clean.csv
+2026-10-11 17:22:52,512 | INFO | file_pipeline_runner | Đang xử lý dataset: order_items (File: order_items_daily.csv)
+2026-10-11 17:22:52,550 | INFO | file_pipeline_runner | [order_items] Profiling -> Rows: 1533, Cols: 9, Duplicates: 0
+2026-10-11 17:22:52,571 | INFO | file_pipeline_runner | [SUCCESS] order_items -> Input rows: 1533 | Output rows: 1533 | Đã lưu tại: C:/Users/Admin/app/ecommerce-data-engineering/data/staging/order_items_clean.csv
+2026-10-11 17:22:52,571 | INFO | file_pipeline_runner | Đang xử lý dataset: payments (File: payments_daily.json)
+2026-10-11 17:22:52,601 | INFO | file_pipeline_runner | [payments] Profiling -> Rows: 536, Cols: 9, Duplicates: 0
+2026-10-11 17:22:52,612 | INFO | file_pipeline_runner | [SUCCESS] payments -> Input rows: 536 | Output rows: 536 | Đã lưu tại: C:/Users/Admin/app/ecommerce-data-engineering/data/staging/payments_clean.csv
+2026-10-11 17:22:52,612 | INFO | file_pipeline_runner | === Hoàn tất toàn bộ chuỗi Pipeline RAW -> STAGING thành công rực rỡ! ===
