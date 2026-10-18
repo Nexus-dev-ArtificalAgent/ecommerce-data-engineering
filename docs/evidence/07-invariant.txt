@@ -1,0 +1,5 @@
+customers: 40 = 38 + 2 OK
+products: 30 = 0 + 30 OK
+orders: 100 = 0 + 100 OK
+order_items: 220 = 13 + 207 OK
+payments: 90 = 12 + 78 OK

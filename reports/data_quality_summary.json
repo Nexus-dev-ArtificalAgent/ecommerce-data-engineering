@@ -1,0 +1,38 @@
+{
+  "summary": [
+    {
+      "dataset": "customers",
+      "input": 40,
+      "valid": 38,
+      "rejected": 2
+    },
+    {
+      "dataset": "products",
+      "input": 30,
+      "valid": 0,
+      "rejected": 30
+    },
+    {
+      "dataset": "orders",
+      "input": 100,
+      "valid": 0,
+      "rejected": 100
+    },
+    {
+      "dataset": "order_items",
+      "input": 220,
+      "valid": 13,
+      "rejected": 207
+    },
+    {
+      "dataset": "payments",
+      "input": 90,
+      "valid": 12,
+      "rejected": 78
+    }
+  ],
+  "total_datasets": 5,
+  "total_input": 480,
+  "total_valid": 63,
+  "total_rejected": 417
+}
