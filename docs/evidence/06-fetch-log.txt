@@ -1,0 +1,7 @@
+2026-10-18 17:40:51,514 [INFO] resource=orders page=4 rows=100 total_so_far=400
+2026-10-18 17:40:51,516 [INFO] [Attempt 1/3] Đang gọi GET tới http://localhost:8000/orders (page=5, page_size=100)...
+2026-10-18 17:40:51,544 [INFO] resource=orders page=5 rows=100 total_so_far=500
+2026-10-18 17:40:51,546 [INFO] [Attempt 1/3] Đang gọi GET tới http://localhost:8000/orders (page=6, page_size=100)...
+2026-10-18 17:40:51,771 [INFO] resource=orders page=6 rows=100 total_so_far=600
+2026-10-18 17:40:51,772 [INFO] Đã duyệt xong tất cả các trang của resource 'orders'. Tổng số bản ghi: 600
+2026-10-18 17:40:51,776 [INFO] RAW saved to C:\Users\Admin\app\ecommerce-data-engineering\data\raw\run_20261018_174051\orders.json (600 records)

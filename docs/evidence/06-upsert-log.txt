@@ -1,0 +1,9 @@
+(.venv) PS C:\Users\Admin\app\ecommerce-data-engineering> python -m src.load_postgres
+
+--- Đang nạp dữ liệu từ phiên: run_20261018_181424 ---
+2026-10-18 18:19:40,970 [INFO] [UPSERT] table=core.customers incoming=100 inserted=50 updated=50
+Kết quả UPSERT Customers: {'inserted': 50, 'updated': 50, 'inserted_or_updated': 100}
+2026-10-18 18:19:41,127 [INFO] [UPSERT] table=core.products incoming=50 inserted=20 updated=30
+Kết quả UPSERT Products: {'inserted': 20, 'updated': 30, 'inserted_or_updated': 50}
+2026-10-18 18:19:41,263 [INFO] [UPSERT] table=core.orders incoming=600 inserted=600 updated=0
+Kết quả UPSERT Orders: {'inserted': 600, 'updated': 0, 'inserted_or_updated': 600}
