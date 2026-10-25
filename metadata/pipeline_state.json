@@ -1,0 +1,15 @@
+{
+    "last_run_id": "RUN-45BF2C48",
+    "last_successful_at": "2026-10-25T13:39:02.954507",
+    "last_source": "both",
+    "status": "success",
+    "api_watermarks": {
+        "orders": "2026-07-02T01:44:00+07:00",
+        "order_items": "2026-07-01T22:59:00+07:00",
+        "payments": "2026-07-02T03:22:00+07:00"
+    },
+    "processed_file_batches": [
+        "C:\\Users\\Admin\\app\\ecommerce-data-engineering\\data\\incremental\\day_2026-07-01",
+        "C:\\Users\\Admin\\app\\ecommerce-data-engineering\\data\\incremental\\non_existent_dir"
+    ]
+}

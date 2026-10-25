@@ -1,0 +1,30 @@
+﻿2026-10-24 21:05:23,904 | INFO | pipeline_orchestrator | [1/8] Khß╗ƒi tß║ío phi├¬n chß║íy th├ánh c├┤ng | run_id=RUN-7BE8E403 | last_run_id=RUN-B1A6C7FF
+2026-10-24 21:05:23,905 | INFO | pipeline_orchestrator | [2/8] Tr├¡ch xuß║Ñt dß╗» liß╗çu | Source: file | Input Dir: C:\Users\Admin\app\ecommerce-data-engineering\data\incremental\day_2026-07-01
+2026-10-24 21:05:23,910 | INFO | pipeline_orchestrator |   -> [File Ingestion] ─Éß╗ìc th├ánh c├┤ng customers: 100 d├▓ng tß╗½ C:\Users\Admin\app\ecommerce-data-engineering\data\incremental\day_2026-07-01\customers_daily.csv
+2026-10-24 21:05:23,914 | INFO | pipeline_orchestrator |   -> [File Ingestion] ─Éß╗ìc th├ánh c├┤ng products: 50 d├▓ng tß╗½ C:\Users\Admin\app\ecommerce-data-engineering\data\incremental\day_2026-07-01\products_daily.csv
+2026-10-24 21:05:23,917 | INFO | pipeline_orchestrator |   -> [File Ingestion] ─Éß╗ìc th├ánh c├┤ng orders: 600 d├▓ng tß╗½ C:\Users\Admin\app\ecommerce-data-engineering\data\incremental\day_2026-07-01\orders_daily.csv
+2026-10-24 21:05:23,921 | INFO | pipeline_orchestrator |   -> [File Ingestion] ─Éß╗ìc th├ánh c├┤ng order_items: 1533 d├▓ng tß╗½ C:\Users\Admin\app\ecommerce-data-engineering\data\incremental\day_2026-07-01\order_items_daily.csv
+2026-10-24 21:05:23,940 | INFO | pipeline_orchestrator |   -> [File Ingestion] ─Éß╗ìc th├ánh c├┤ng payments: 536 d├▓ng tß╗½ C:\Users\Admin\app\ecommerce-data-engineering\data\incremental\day_2026-07-01\payments_daily.json
+2026-10-24 21:05:23,940 | INFO | pipeline_orchestrator | [3/8] Chuß║⌐n h├│a ─æß╗ïnh dß║íng (normalize) v├á kiß╗âm tra Schema (validate_schema)...
+2026-10-24 21:05:23,941 | INFO | pipeline_orchestrator |   -> Chuß║⌐n h├│a xong cß╗Öt cho dataset: customers
+2026-10-24 21:05:23,941 | INFO | pipeline_orchestrator |   -> Chuß║⌐n h├│a xong cß╗Öt cho dataset: products
+2026-10-24 21:05:23,942 | INFO | pipeline_orchestrator |   -> Chuß║⌐n h├│a xong cß╗Öt cho dataset: orders
+2026-10-24 21:05:23,942 | INFO | pipeline_orchestrator |   -> Chuß║⌐n h├│a xong cß╗Öt cho dataset: order_items
+2026-10-24 21:05:23,942 | INFO | pipeline_orchestrator |   -> Chuß║⌐n h├│a xong cß╗Öt cho dataset: payments
+2026-10-24 21:05:23,942 | INFO | pipeline_orchestrator | [4/8] Kiß╗âm tra chß║Ñt l╞░ß╗úng dß╗» liß╗çu v├á ph├ón t├ích luß╗ông (Valid vs Reject)...
+2026-10-24 21:05:23,948 | INFO | pipeline_orchestrator |   -> Ph├ít hiß╗çn 5 d├▓ng vi phß║ím ß╗ƒ customers, ─æ├ú l╞░u v├áo C:\Users\Admin\app\ecommerce-data-engineering\data\reject\RUN-7BE8E403\customers_reject.csv
+2026-10-24 21:05:23,950 | INFO | pipeline_orchestrator |   -> Ph├ít hiß╗çn 3 d├▓ng vi phß║ím ß╗ƒ products, ─æ├ú l╞░u v├áo C:\Users\Admin\app\ecommerce-data-engineering\data\reject\RUN-7BE8E403\products_reject.csv
+2026-10-24 21:05:23,953 | INFO | pipeline_orchestrator |   -> Ph├ít hiß╗çn 30 d├▓ng vi phß║ím ß╗ƒ orders, ─æ├ú l╞░u v├áo C:\Users\Admin\app\ecommerce-data-engineering\data\reject\RUN-7BE8E403\orders_reject.csv
+2026-10-24 21:05:23,956 | INFO | pipeline_orchestrator |   -> Ph├ít hiß╗çn 77 d├▓ng vi phß║ím ß╗ƒ order_items, ─æ├ú l╞░u v├áo C:\Users\Admin\app\ecommerce-data-engineering\data\reject\RUN-7BE8E403\order_items_reject.csv
+2026-10-24 21:05:23,961 | INFO | pipeline_orchestrator |   -> Ph├ít hiß╗çn 27 d├▓ng vi phß║ím ß╗ƒ payments, ─æ├ú l╞░u v├áo C:\Users\Admin\app\ecommerce-data-engineering\data\reject\RUN-7BE8E403\payments_reject.csv
+2026-10-24 21:05:23,962 | INFO | pipeline_orchestrator | [5/8] Nß║íp dß╗» liß╗çu v├áo Core Database (PostgreSQL) th├┤ng qua Transaction an to├án...
+2026-10-24 21:05:23,991 | INFO | pipeline_orchestrator |   [5/8 Nß║íp Core] Dataset: customers | input=100 | valid=95 | reject=5 | inserted=95 | updated=0
+2026-10-24 21:05:23,991 | INFO | pipeline_orchestrator |   [5/8 Nß║íp Core] Dataset: products | input=50 | valid=47 | reject=3 | inserted=47 | updated=0
+2026-10-24 21:05:23,991 | INFO | pipeline_orchestrator |   [5/8 Nß║íp Core] Dataset: orders | input=600 | valid=570 | reject=30 | inserted=570 | updated=0
+2026-10-24 21:05:23,991 | INFO | pipeline_orchestrator |   [5/8 Nß║íp Core] Dataset: order_items | input=1533 | valid=1456 | reject=77 | inserted=1456 | updated=0
+2026-10-24 21:05:23,991 | INFO | pipeline_orchestrator |   [5/8 Nß║íp Core] Dataset: payments | input=536 | valid=509 | reject=27 | inserted=509 | updated=0
+2026-10-24 21:05:23,992 | INFO | pipeline_orchestrator | [6/8] Thß╗▒c hiß╗çn ─æß╗æi so├ít bß║Ñt biß║┐n (input = valid + rejected)...
+2026-10-24 21:05:23,992 | INFO | pipeline_orchestrator |   -> ─Éß╗æi so├ít bß║Ñt biß║┐n th├ánh c├┤ng tuyß╗çt ─æß╗æi cho tß║Ñt cß║ú datasets!
+2026-10-24 21:05:23,993 | INFO | pipeline_orchestrator | [7/8] L├ám mß╗¢i Data Mart: SKIPPED (Kh├┤ng truyß╗ün cß╗¥ --refresh-mart)
+2026-10-24 21:05:23,994 | INFO | pipeline_orchestrator | [8/8] Cß║¡p nhß║¡t trß║íng th├íi th├ánh c├┤ng mß╗¢i v├áo metadata/pipeline_state.json...
+2026-10-24 21:05:23,998 | INFO | pipeline_orchestrator | Pipeline ho├án th├ánh to├án vß║╣n! run_id=RUN-7BE8E403 | Pipeline ho├án th├ánh (exit 0)

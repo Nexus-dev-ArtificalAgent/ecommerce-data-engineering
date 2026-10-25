@@ -1,0 +1,18 @@
+﻿2026-10-24 21:16:20,071 | INFO | pipeline_checkpoint | [1/8] Khß╗ƒi tß║ío phi├¬n chß║íy | run_id=RUN-B2C43280 | last_run_id=RUN-FA5F5332
+python : 2026-10-24 21:16:20,071 [INFO] [1/8] Khß╗ƒi tß║ío phi├¬n chß║íy | run_id=RUN-B2C43280 | last_run_id=RUN-FA5F5332
+At line:1 char:1
++ python -m src.pipeline --input-dir data/incremental/non_existent_dir  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-24 21:1...id=RUN-FA5F5332:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Traceback (most recent call last):
+  File "<frozen runpy>", line 201, in _run_module_as_main
+  File "<frozen runpy>", line 87, in _run_code
+  File "C:\Users\Admin\app\ecommerce-data-engineering\src\pipeline.py", line 198, in <module>
+    run_pipeline()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\app\ecommerce-data-engineering\src\pipeline.py", line 109, in run_pipeline
+    raise FileNotFoundError(f"Th╞░ mß╗Ñc dß╗» liß╗çu ─æß║ºu v├áo kh├┤ng tß╗ôn tß║íi: {input_path}")
+FileNotFoundError: Th╞░ mß╗Ñc dß╗» liß╗çu ─æß║ºu v├áo kh├┤ng tß╗ôn tß║íi: 
+C:\Users\Admin\app\ecommerce-data-engineering\data\incremental\non_existent_dir

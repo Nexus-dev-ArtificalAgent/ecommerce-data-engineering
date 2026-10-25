@@ -1,0 +1,16 @@
+﻿2026-10-24 21:34:45,645 | INFO | refresh_mart | Bắt đầu quy trình làm mới Sales Data Mart...
+2026-10-24 21:34:45,686 | INFO | refresh_mart | KPI trước khi làm mới: {'total_revenue': 65562040000.0, 'order_count': 5000, 'completed_orders': 3880, 'total_items_sold': 16659}
+2026-10-24 21:34:45,686 | INFO | refresh_mart | Đang thực thi kịch bản SQL từ C:\Users\Admin\app\ecommerce-data-engineering\sql\solutions\12_load_data_mart.sql...
+2026-10-24 21:34:45,889 | INFO | refresh_mart | Thực thi script SQL làm mới Data Mart thành công!
+2026-10-24 21:34:45,899 | INFO | refresh_mart | KPI sau khi làm mới: {'total_revenue': 65562040000.0, 'order_count': 5000, 'completed_orders': 3880, 'total_items_sold': 16659}
+2026-10-24 21:34:45,908 | INFO | refresh_mart | Đã xuất bảng đối chiếu KPI thành công tại: C:\Users\Admin\app\ecommerce-data-engineering\docs\kpi_comparison.csv
+
+=== BẢNG ĐỐI CHIẾU KPI (BEFORE vs AFTER) ===
+             kpi       before        after  diff
+   total_revenue 6.556204e+10 6.556204e+10   0.0
+     order_count 5.000000e+03 5.000000e+03   0.0
+completed_orders 3.880000e+03 3.880000e+03   0.0
+total_items_sold 1.665900e+04 1.665900e+04   0.0
+===========================================
+
+2026-10-24 21:34:45,914 | INFO | refresh_mart | Đã đóng kết nối cơ sở dữ liệu an toàn.

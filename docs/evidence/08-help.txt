@@ -1,0 +1,15 @@
+﻿usage: python.exe -m src.pipeline [-h] [--input-dir INPUT_DIR]
+                                  [--source {file,api,both}] [--refresh-mart]
+                                  [--skip-processed-file]
+
+Enterprise End-to-End Data Pipeline Orchestrator
+
+options:
+  -h, --help            show this help message and exit
+  --input-dir INPUT_DIR
+                        ─É╞░ß╗¥ng dß║½n th╞░ mß╗Ñc chß╗⌐a dß╗» liß╗çu file theo ng├áy
+  --source {file,api,both}
+                        Nguß╗ôn dß╗» liß╗çu chß╗ë ─æß╗ïnh
+  --refresh-mart        Cß╗¥ k├¡ch hoß║ít l├ám mß╗¢i Sales Data Mart sau khi nß║íp Core
+  --skip-processed-file
+                        Cß╗¥ bß╗Å qua th╞░ mß╗Ñc batch file nß║┐u ─æ├ú xß╗¡ l├╜
